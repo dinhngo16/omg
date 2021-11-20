@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styte.css">
+    <title>Câu hỏi duy nhất về Định</title>
+</head>
+<body>
+    <div class="topnav">
+        <div class="header">Bạn có thấy tôi đẹp trai không?</div>
+        <div class="tl">
+        <div class="grid">
+            <div class="tl1">Có</div>
+            <div class="tl2">Không</div>
+        </div>
+        <div class="grid grid2">
+            <div class="tl3">Không</div>
+        </div>
+        <div class="grid">
+            <div class="tl4">Không</div>
+        </div>
+        <div class="hihi">======================</div>
+        </div>
+    </div>
+    <div class="topnav2">
+        <div>Ơi dời ơi</div>
+        <div class="haha">Tôi cảm ơn bạn nhé!</div>
+        <div>HiHi</div>
+    </div>
+    <script>
+        const $ = document.querySelector.bind(document)
+      
+        const traloi1= $('.tl1')
+        const traloi2= $('.tl2')
+        const traloi3= $('.tl3')
+        const traloi4= $('.tl4')
+        const topnavv= $('.topnav')
+        const topnavv2= $('.topnav2')
+
+        traloi2.onclick=function(){
+            traloi3.style.display="block";
+            traloi2.style.display="none";
+        }
+        traloi3.onclick=function(){
+            traloi4.style.display="block";
+            traloi3.style.display="none";
+        }
+        traloi4.onclick=function(){
+            traloi2.style.display="block";
+            traloi4.style.display="none";
+        }
+        traloi1.onclick=function(){
+            topnavv.style.display="none";
+            topnavv2.style.display="block";
+        }
+
+    </script>
+</html>
